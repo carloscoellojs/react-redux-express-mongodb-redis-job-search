@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "types": ["jest", "@testing-library/jest-dom", "node"],
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": false,
+    "verbatimModuleSyntax": false,
+    "noEmit": false,
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "CommonJS",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.test.*",
+    "src/**/*.spec.*",
+    "src/types/jest.d.ts",
+    "setupTests.ts",
+    "jest-setup.js"
+  ],
+  "exclude": ["node_modules"]
+}
